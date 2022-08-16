@@ -1,11 +1,6 @@
 # groupProject1
--WHEN I search for an astrological sign
--THEN I am presented with that sign
--WHEN I view 
--THEN I am presented with 
--WHEN I view 
--THEN I am presented with 
--WHEN I view 
--THEN I am presented with 
--WHEN I click on 
--THEN I am again presented with 
+-WHEN I view the website
+-THEN I am presented with a fluid navigation bar on the top of the page and on the side
+-WHEN I click my selection
+-THEN I am either linked to my selction or presented with a popup option
+
