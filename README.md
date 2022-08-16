@@ -1,6 +1,6 @@
 # groupProject1
 -WHEN I search for an astrological sign
--THEN I am presented with 
+-THEN I am presented with that sign
 -WHEN I view 
 -THEN I am presented with 
 -WHEN I view 
