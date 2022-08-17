@@ -1,0 +1,41 @@
+/* 
+@font-face {
+  font-display: swap;
+  font-family: 'DM Serif Display', serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"); 
+} */
+
+body {
+  margin: 0;
+  line-height: inherit;
+}
+
+/* p {
+  font-family: 'DM Serif Display', serif;
+  text-align: center;
+  font-size: 250%;
+  color: #b33fbb;
+  text-shadow: -1px -1px 0 #c172e5
+} */
+
+#container {
+  background-color: #2F63BD;
+  opacity: 90%;
+  min-width: 550px;
+  min-height: 550px;
+
+}
+
+#menu {
+  opacity: 90%;
+}
+
+#contact {
+  opacity: 90%;
+}
+
+.topnav {
+  
+}
