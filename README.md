@@ -2,11 +2,11 @@
 
 User story:
 
-AS a user I want to find out my sun sign and horoscope
+AS a user I want to find out my sun/moon sign and horoscope
 
 WHEN I enter my birth information
 
-THEN I am presented with my sun sign info/picture and a daily horoscope
+THEN I am presented with my sun/moon sign info/picture and a daily horoscope
 
 THEN I can save my horoscope
 
