@@ -18,10 +18,20 @@ THEN I can navigate with a fluid navigation bar to a page with the saved informa
 
 
 
-Screencapture of website:
 
 
 
 
 
-Deployed url of website: 
+
+
+
+
+
+Screencapture of website here:
+
+
+
+
+
+Deployed url of website here: 
