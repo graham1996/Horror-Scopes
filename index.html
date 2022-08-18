@@ -126,11 +126,12 @@ body, html {height: 100%}
   <div id="container" class="w3-display-middle w3-xlarge">
     <p class="w3-display-topmiddle">ready to see your future?</p>
     <img></img>
-    <p><button class="w3-button w3-display-bottommiddle" type="submit">try your luck</button></p>
+    <p><button onclick="document.getElementById('try your luck').style.display='block'" class="w3-button w3-black w3-display-bottommiddle">try your luck</button></p>
   </div>
   <div class="w3-display-topleft w3-container w3-xlarge">
     <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">menu</button></p>
     <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">contact</button></p>
+
   </div>
   <div class="w3-display-bottomleft w3-container">
     <p class="w3-large">House Targaryen</p>
@@ -138,6 +139,27 @@ body, html {height: 100%}
   </div>
 </div>
 <!-- Menu Modal -->
+
+
+
+<p><div id="try your luck" class="w3-modal"></p>
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container"> 
+    <button onclick="document.getElementById('try your luck').style.display='none'" class="w3-button w3-display-topright w3-large">x</button>
+    </div>
+    <div class="w3-container">
+      <h4 id='s_zodiac'>Your zodiac sign is a...</h4><form action='#' method='post'>
+      <p>Select the day and month, then click the button.</p>
+      Day: <select id='s_days'><option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option></select> - 
+      Month: <select id='s_m'><option value='1'>January</option><option value='2'>February</option><option value='3'>March</option><option value='4'>April</option><option value='5'>May</option><option value='6'>June</option><option value='7'>July</option><option value='8'>August</option><option value='9'>September</option><option value='10'>October</option><option value='11'>November</option><option value='12'>December</option></select>
+      <input type='button' id='test_z' value='Enter'/></form>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </div>  
+</div>
+
+
+
 <div id="menu" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container w3-black w3-display-container">
