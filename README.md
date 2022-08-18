@@ -5,5 +5,5 @@
 
 -WHEN I click my selection
 
--THEN I am either linked to my selction or presented with a popup option that includes 
+-THEN I am either linked to my selction or presented with a popup option that includes links to the various parts of the website
 
