@@ -9,4 +9,5 @@ function zodiac(day, month){
 
 
 
-console.log(document.getElementById('s_zodiac'));
+  
+  
