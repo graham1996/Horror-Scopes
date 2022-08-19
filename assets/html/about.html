@@ -22,15 +22,14 @@ body, html {height: 100%}
 </head>
 <body>
   <!--Center this and link the other stuff-->
-  <div class="topnav"
-  <div class="w3-bar w3-black">
-  <a href="./index.html" class="w3-bar-item w3-button center">Home</a>
+  <div class="topnav">
+  <div id="navcenter" class="w3-bar w3-black">
+  <a href="../../index.html" class="w3-bar-item w3-button center">Home</a>
 
-  <a href="./assets/html/signs.html" class="w3-bar-item w3-button center">Meet The Signs</a>
-
-  <a href="./assets/html/saved.html" class="w3-bar-item w3-button center">Saved Horrorscopes</a>
+  <a href="../html/saved.html" class="w3-bar-item w3-button center">Saved Horrorscopes</a>
   
-  <a href="./assets/html/about.html" class="w3-bar-item w3-button center">About</a>
+  <a href="../html/about.html" class="w3-bar-item w3-button center">About</a>
+</div>
 </div>
   
 <div class="bgimg w3-display-container w3-text-white">
@@ -46,8 +45,8 @@ body, html {height: 100%}
     <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">contact</button></p>
   </div>
   <div class="w3-display-bottomleft w3-container">
+    <img id="moon" src="../images/fullmoon.png">
     <p class="w3-large">House Targaryen</p>
-    <p>powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
   </div>
 </div>
 <!-- Menu Modal -->
@@ -55,10 +54,10 @@ body, html {height: 100%}
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container w3-black w3-display-container">
       <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      <h1>Meet the Signs</h1>
+      <h1>Home</h1>
     </div>
     <div class="w3-container">
-      <a href="./assets/html/signs.html" target="_blank" class="w3-large">We know you're curious.</h5>
+      <a href="../../index.html" target="_blank" class="w3-large">It's where the heart is!</h5>
     </div>
     <div class="w3-container w3-black">
       <h1>Saved Horrorscopes</h1>
@@ -92,7 +91,8 @@ body, html {height: 100%}
     </div>
   </div>
 </div>
-<script src="./assets/js/scripts.js"></script>
+<script src="../js/scripts.js"></script>
+<script src="../js/signs.js"></script>
 </body>
 </html>
 
