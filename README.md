@@ -1,6 +1,6 @@
 # groupProject1
 
-User story:
+Userstory:
 
 AS a user I want to be able to see what the future has in store for me 
 
@@ -23,15 +23,14 @@ THEN I can navigate with a fluid navigation bar to a page with the saved informa
 
 
 
+Screencapture of website:
 
 
 
 
 
-Screencapture of website here:
 
 
 
 
-
-Deployed url of website here: 
+Deployed url of website: 
