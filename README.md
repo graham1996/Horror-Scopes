@@ -2,9 +2,9 @@
 
 User story:
 
-AS a user I want to find out my sun/moon sign and horoscope
+AS a user I want to be able to see what the future has in store for me 
 
-WHEN I enter my birth information
+WHEN I enter my birthday information
 
 THEN I am presented with my sun/moon sign info/picture and a daily horoscope
 
