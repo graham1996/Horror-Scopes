@@ -16,7 +16,15 @@ body {
   opacity: 90%;
 }
 
+#menbutton {
+  opacity: 95%;
+}
+
 #contact {
+  opacity: 95%;
+}
+
+#conbutton {
   opacity: 90%;
 }
 
@@ -27,6 +35,7 @@ body {
 #navcenter {
   display: flex;
   justify-content: center;
+  /* opacity: 90%; */
 }
 
 #menText {
