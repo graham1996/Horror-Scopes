@@ -34,7 +34,7 @@ body, html {height: 100%}
   <div id="container" class="w3-display-middle w3-xlarge">
     <p class="w3-display-topmiddle"></p>
     <img></img>
-    <p><button class="w3-button w3-display-bottommiddle" type="submit">try your luck</button></p>
+    <!-- <p><button class="w3-button w3-display-bottommiddle" type="submit">try your luck</button></p> -->
   </div>
   <div class="w3-display-topleft w3-container w3-xlarge">
     <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">menu</button></p>
@@ -49,24 +49,24 @@ body, html {height: 100%}
 <!-- Menu Modal -->
 <div id="menu" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-black w3-display-container">
+    <div class="w3-container w3-black w3-display-container w3-hover-blue">
       <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      <h1>Home</h1>
+      <a href="../../index.html" id="menText">Home</a>
     </div>
     <div class="w3-container">
-      <a href="./assets/html/signs.html" target="_blank" class="w3-large">It's where the heart is!</h5>
+      <h5>It's where the heart is!</h5>
     </div>
-    <div class="w3-container w3-black">
-      <h1>Saved Horrorscopes</h1>
-    </div>
-    <div class="w3-container">
-       <a href="./assets/html/saved.html" class="w3-large">Just can't get enough, can you?</a>
-    </div>
-    <div class="w3-container w3-black">
-      <h1>Who Built This Thing?</h1>
+    <div class="w3-container w3-black w3-hover-blue">
+      <a href="../html/saved.html" id="menText">Saved Horrorscopes</a>
     </div>
     <div class="w3-container">
-        <a href="./assets/html/about.html" class="w3-large">No but like, really, who was it?</a>
+       <h5>Just can't get enough, can you?</h5>
+    </div>
+    <div class="w3-container w3-black w3-hover-blue">
+      <a  href="../html/about.html" id="menText">Who Built This Thing?</a>
+    </div>
+    <div class="w3-container">
+        <h5>No but like, really, who was it?</h5>
     </div>
   </div>
 </div>
@@ -89,7 +89,6 @@ body, html {height: 100%}
   </div>
 </div>
 <script src="../js/scripts.js"></script>
-<script src="../js/signs.js"></script>
 </body>
 </html>
 

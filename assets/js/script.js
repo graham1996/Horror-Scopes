@@ -33,21 +33,21 @@ console.log(moonLat);
 
 
 fetch("https://rws-cards-api.herokuapp.com/api/v1/cards/random?n=3")
-  .then(function (response) {
-    return response.json()
-    .then(function (data) {
-        console.log(data);
-        if(!cardName1){
-        localStorage.setItem("card-1-name", data.cards[0].name);
-        localStorage.setItem('card-1-meaning', data.cards[0].meaning_up)
-        localStorage.setItem("card-2-name", data.cards[1].name);
-        localStorage.setItem('card-2-meaning', data.cards[1].meaning_up)
-        localStorage.setItem("card-3-name", data.cards[2].name);
-        localStorage.setItem('card-3-meaning', data.cards[2].meaning_up)
-        }
+    .then(function (response) {
+        return response.json()
+            .then(function (data) {
+                console.log(data);
+                if (!cardName1) {
+                    localStorage.setItem("card-1-name", data.cards[0].name);
+                    localStorage.setItem('card-1-meaning', data.cards[0].meaning_up)
+                    localStorage.setItem("card-2-name", data.cards[1].name);
+                    localStorage.setItem('card-2-meaning', data.cards[1].meaning_up)
+                    localStorage.setItem("card-3-name", data.cards[2].name);
+                    localStorage.setItem('card-3-meaning', data.cards[2].meaning_up)
+                }
 
-    })
-  });
+            })
+    });
 
 fetch(nasaUrl + 'regulus', {
 })
@@ -82,62 +82,106 @@ fetch(moonUrl + "lat=1" + "&lon=1" + "&appid=" + moonKey, {
 var moonPhase = localStorage.getItem("moon_phase");
 console.log(moonPhase);
 
-window.onload = function(){
-setTime()
+window.onload = function () {
+    setTime()
 
-    
+
     moonEl = document.getElementById('moon');
-if (moonPhase === 0) {
-    console.log("new moon");
-    moonEl.setAttribute('src', './assets/images/newmoon.png')
+    if (moonPhase === 0) {
+        console.log("new moon");
+        moonEl.setAttribute('src', './assets/images/newmoon.png')
+    }
+    else if (moonPhase < 0.25) {
+        console.log("waxing crescent");
+        moonEl.setAttribute('src', './assets/images/waxingcrescent.png')
+    }
+    else if (moonPhase < 0.26) {
+        console.log("first quarter");
+        moonEl.setAttribute('src', './assets/images/firstquarter.png')
+    }
+    else if (moonPhase < 0.5) {
+        console.log("waxing gibbous");
+        moonEl.setAttribute('src', './assets/images/waxinggibbous.png')
+    }
+    else if (moonPhase < 0.51) {
+        console.log("full moon");
+        moonEl.setAttribute('src', './assets/images/fullmoon.png')
+    }
+    else if (moonPhase < 0.75) {
+        console.log("waning gibbous");
+        moonEl.setAttribute('src', './assets/images/waninggibbous.png')
+    }
+    else if (moonPhase < 0.76) {
+        console.log("last quarter");
+        moonEl.setAttribute('src', './assets/images/lastquarter.png')
+    }
+    else if (moonPhase) {
+        console.log("waning crescent");
+        moonEl.setAttribute('src', './assets/images/waningcrescent.png')
+    }
+    else {
+        moonPhaseEl.text("You dont care about the moon :(")
+    }
 }
-else if (moonPhase < 0.25) {
-    console.log("waxing crescent");
-    moonEl.setAttribute('src', './assets/images/waxingcrescent.png')
-}
-else if (moonPhase < 0.26) {
-    console.log("first quarter");
-    moonEl.setAttribute('src', './assets/images/firstquarter.png')
-}
-else if (moonPhase < 0.5) {
-    console.log("waxing gibbous");
-    moonEl.setAttribute('src', './assets/images/waxinggibbous.png')
-}
-else if (moonPhase < 0.51) {
-    console.log("full moon");
-    moonEl.setAttribute('src', './assets/images/fullmoon.png')
-}
-else if (moonPhase < 0.75) {
-    console.log("waning gibbous");
-    moonEl.setAttribute('src', './assets/images/waninggibbous.png')
-}
-else if (moonPhase < 0.76) {
-    console.log("last quarter");
-    moonEl.setAttribute('src', './assets/images/lastquarter.png')
-}
-else if(moonPhase){
-    console.log("waning crescent");
-    moonEl.setAttribute('src', './assets/images/waningcrescent.png')
-}
-else{
-    moonPhaseEl.text("You dont care about the moon :(")
-}}
+
+
+
 function setTime() {
     var timeEl = $('.time');
     var timerInterval = setInterval(function () {
         timeEl.textContent = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
         return;
-    }, 50)}
+    }, 50)
+}
 
-function zodiac(day, month){
-    var zodiac =['', 'Capricorn', 'Aquarius', 'Pisces', 'Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn'];
-    var last_day =['', 19, 18, 20, 19, 20, 20, 22, 22, 22, 22, 21, 21, 19];
-    return (day > last_day[month]) ? zodiac[month*1 + 1] : zodiac[month];
-   }
-   document.getElementById('test_z').onclick = function(){
-   document.getElementById('s_zodiac').innerHTML = zodiac(document.getElementById('s_days').value, document.getElementById('s_m').value);
-   }
+function zodiac(day, month) {
+    var zodiac = ['', 'Capricorn', 'Aquarius', 'Pisces', 'Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn'];
+    var last_day = ['', 19, 18, 20, 19, 20, 20, 22, 22, 22, 22, 21, 21, 19];
+    return (day > last_day[month]) ? zodiac[month * 1 + 1] : zodiac[month];
+}
+document.getElementById('test_z').onclick = function () {
+    document.getElementById('s_zodiac').innerHTML = zodiac(document.getElementById('s_days').value, document.getElementById('s_m').value);
+}
 
-
+// var horoscopeButtonEl = document.getElementById('horoscopebut');
+horoscopeButtonEl.addEventListener("click", function () {
+    if (capricorn) {
+        horoscopeEl.textContent = capricornHoroscopes[Math.floor(Math.random() * 3)]
+    }
+    else if (aquarius) {
+        horoscopeEl.textContent = capricornHoroscopes[Math.floor(Math.random() * 3)]
+    }
+    else if (pisces) {
+        horoscopeEl.textContent = piscesHoroscopes[Math.floor(Math.random() * 3)]
+    }
+    else if (aries) {
+        horoscopeEl.textContent = ariesHoroscopes[Math.floor(Math.random() * 3)]
+    }
+    else if (taurus) {
+        horoscopeEl.textContent = taurusHoroscopes[Math.floor(Math.random() * 3)]
+    }
+    else if (gemini) {
+        horoscopeEl.textContent = geminiHoroscopes[Math.floor(Math.random() * 3)]
+    }
+    else if (cancer) {
+        horoscopeEl.textContent = cancerHoroscopes[Math.floor(Math.random() * 3)]
+    }
+    else if (leo) {
+        horoscopeEl.textContent = leoHoroscopes[Math.floor(Math.random() * 3)]
+    }
+    else if (virgo) {
+        horoscopeEl.textContent = virgoHoroscopes[Math.floor(Math.random() * 3)]
+    }
+    else if (libra) {
+        horoscopeEl.textContent = libraHoroscopes[Math.floor(Math.random() * 3)]
+    }
+    else if (scorpio) {
+        horoscopeEl.textContent = scorpioHoroscopes[Math.floor(Math.random() * 3)]
+    }
+    else if (sagittarius) {
+        horoscopeEl.textContent = sagittariusHoroscopes[Math.floor(Math.random() * 3)]
+    }
+}
+)
 
 console.log(document.getElementById('s_zodiac'));
