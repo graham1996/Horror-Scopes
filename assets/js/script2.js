@@ -18,12 +18,6 @@ var moonUrl = "https://api.openweathermap.org/data/2.5/onecall?";
 var moonLat = localStorage.getItem('latitude');
 var moonLon = localStorage.getItem('longitude');
 var moonEl = document.getElementById('moon');
-var cardName1 = localStorage.getItem('card-1-name');
-var cardName2 = localStorage.getItem('card-2-name');
-var cardName3 = localStorage.getItem('cart-3-name');
-var cardMeaning1 = localStorage.getItem('card-1-meaning');
-var cardMeaning2 = localStorage.getItem('card-2-meaning');
-var cardMeaning3 = localStorage.getItem('card-3-meaning');
 var geminiHoroscopes = ['Learn everything now. In your solar return, you have the ability to know all things by staring directly at the sun for several hours, or at the sun’s nemesis, the moon. Perhaps the latter is safest.', 'There is a sentient seashell in your ribcage. Pry open the bone-hinge, hold it to your ear, & listen. It’s whispers are calling b.s. & telling good truths, for it is all-knowing. Put your faith in yourself, your voice, & in psychic seashell.', 'The great thing about being dazzling is that everyone is drawn to you, but the terrible thing is also that everyone is drawn to you. It’s the clove cigarette paradox. Consider dabbling in some well-meaning psychic manipulation. Read Circe’s secret diaries.'];
 var taurusHoroscopes = ['You need to build an R&R-burrow to do some feelings, & because you draw comfort from tangible things, demand that the spirits of ether manifest. Let the archangels burn with splendor! Because for you, it isn’t real unless it’s right there blazing in your self-care bunker.', 'After the full moon, your dreams will answer your most pressing questions about love, magic, & adequate hydration. Yes, even that dream about harmonizing with an all-spider a capella group. Especially that one. Keep a dream journal bound in fairy spittle.', 'Change is coming from within you in the form of an Athena-like lightning-burst out through your skull. Allow this new, sassy-smart electricity being to revamp everything from your wardrobe to your nervous system. Crackle onward!'];
 var cancerHoroscopes = ['As it happens, your myriad, shimmering, weird impulses are the guiding force to the world’s happiness. Unlock the tiny bird-sized door of your throat & let the bluebird of your happy weirdness voice its prophetic delights!', 'Whether or not you meant to, at the full moon, you supped on the youth of the world’s children, & you will never age. However, now you have the whims & fancies of an unrestrained child, & you must do your best to indulge the delightful madness that ensues.', 'How can you best serve the Mother Darksome & Divine, & in turn, yourself? Try tattooing your lover in their sleep, mentoring at-risk bats, or start a school for wayward girls with pyrokinesis. Find the right cause to bring you back to your clawed heart.'];
@@ -46,14 +40,12 @@ fetch("https://rws-cards-api.herokuapp.com/api/v1/cards/random?n=3")
     return response.json()
     .then(function (data) {
         console.log(data);
-        if(!cardName1){
         localStorage.setItem("card-1-name", data.cards[0].name);
         localStorage.setItem('card-1-meaning', data.cards[0].meaning_up)
         localStorage.setItem("card-2-name", data.cards[1].name);
         localStorage.setItem('card-2-meaning', data.cards[1].meaning_up)
         localStorage.setItem("card-3-name", data.cards[2].name);
         localStorage.setItem('card-3-meaning', data.cards[2].meaning_up)
-        }
 
     })
   });
@@ -110,15 +102,15 @@ else if (moonPhase < 0.26) {
 }
 else if (moonPhase < 0.5) {
     console.log("waxing gibbous");
-    moonEl.setAttribute('src', './assets/images/waxinggibbous.png')
+    moonEl.setAttribute('src', '../images/waxinggibbous.png')
 }
 else if (moonPhase < 0.51) {
     console.log("full moon");
-    moonEl.setAttribute('src', './assets/images/fullmoon.png')
+    moonEl.setAttribute('src', '../images/fullmoon.png')
 }
 else if (moonPhase < 0.75) {
     console.log("waning gibbous");
-    moonEl.setAttribute('src', './assets/images/waninggibbous.png')
+    moonEl.setAttribute('src', '../images/waninggibbous.png')
 }
 else if (moonPhase < 0.76) {
     console.log("last quarter");
@@ -132,7 +124,7 @@ else{
     moonPhaseEl.text("You dont care about the moon :(")
 }}
 function setTime() {
-    var timeEl = $('.time');
+    var timeEl = $('.time-and-date');
     var timerInterval = setInterval(function () {
         timeEl.textContent = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
         return;
