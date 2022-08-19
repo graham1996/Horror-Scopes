@@ -19,7 +19,15 @@ THEN I can navigate with a fluid navigation bar to a page with the saved informa
 
 
 
+
+
+
+
 Screencapture of website:
+
+
+
+
 
 
 
