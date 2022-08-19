@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="../css/main.css">
-</head>
 <style>
 body,h1,h5 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
@@ -24,13 +23,10 @@ body, html {height: 100%}
   <!--Center this and link the other stuff-->
   <div class="topnav"
   <div class="w3-bar w3-black">
-  <a href="./index.html" class="w3-bar-item w3-button center">Home</a>
-
-  <a href="./assets/html/signs.html" class="w3-bar-item w3-button center">Meet The Signs</a>
-
-  <a href="./assets/html/saved.html" class="w3-bar-item w3-button center">Saved Horrorscopes</a>
-  
-  <a href="./assets/html/about.html" class="w3-bar-item w3-button center">About</a>
+    <a href="./../index.html">
+      <a href="../html/index.html" class="w3-bar-item w3-button center w3-hover-red">Home</a>
+      <a href="../html/saved.html" class="w3-bar-item w3-button center w3-hover-blue">Saved Horoscopes</a>
+      <a href="../html/about.html" class="w3-bar-item w3-button center w3-hover-pink">About</a>
 </div>
   
 <div class="bgimg w3-display-container w3-text-white">
@@ -55,23 +51,13 @@ body, html {height: 100%}
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container w3-black w3-display-container">
       <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      <h1>Meet the Signs</h1>
-    </div>
-    <div class="w3-container">
-      <a href="./assets/html/signs.html" target="_blank" class="w3-large">We know you're curious.</h5>
+      <a href="./assets/html/signs.html" target="_blank" class="w3-large"><h1>Meet the Signs</h1></a>
     </div>
     <div class="w3-container w3-black">
-      <h1>Saved Horrorscopes</h1>
-    </div>
-    <div class="w3-container">
-       <a href="./assets/html/saved.html" class="w3-large">Just can't get enough, can you?</a>
+      <a href="./assets/html/saved.html" target="_blank" class="w3-large"><h1>Saved Horrorscopes</h1></a>
     </div>
     <div class="w3-container w3-black">
-      <h1>Who Built This Thing?</h1>
-    </div>
-    <div class="w3-container">
-        <a href="./assets/html/about.html" class="w3-large">No but like, really, who was it?</a>
-    </div>
+      <a href="./assets/html/about.html" target="_blank" class="w3-large"><h1>About</h1></a>
   </div>
 </div>
 <!-- Contact Modal -->
@@ -85,7 +71,7 @@ body, html {height: 100%}
       <p>If you don't have anything nice to say, then......it's okay, you can still say it:</p>
       <form action="/action_page.php" target="_blank">
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="date-local" placeholder="Date and time" required name="date" value="2020-11-16"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="date" placeholder="Date and time" required name="date" value="2020-11-16"></p>
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
         <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
       </form>

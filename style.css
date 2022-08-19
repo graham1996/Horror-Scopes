@@ -1,0 +1,15 @@
+
+  .topnav{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  aside {
+    width: 100%;
+    margin-right: 0;
+  }
+
+}
+

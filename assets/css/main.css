@@ -22,20 +22,48 @@ body {
 
 #container {
   background-color: #2F63BD;
-  opacity: 90%;
+  opacity: 100%;
   min-width: 550px;
   min-height: 550px;
+  border-radius: 10px;
 
 }
 
 #menu {
-  opacity: 90%;
+  opacity: 100%;
+  border-radius: 10px;
+  
 }
 
 #contact {
-  opacity: 90%;
+  opacity: 100%;
 }
 
-.topnav {
-  
+  .topnav{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+
+
+div#topnav{
+  text-align: center;
+}
+
+div#topnav ul{
+  display: inline-block;
+}
+
+#navcenter {
+  display: flex;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  aside {
+    width: 100%;
+    margin-right: 0;
+  }
+
 }
