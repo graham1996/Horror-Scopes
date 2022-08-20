@@ -51,6 +51,11 @@ body {
   font-weight: 500;
 }
 
+#moontext {
+  opacity: 80%;
+  text-align: center;
+}
+
 /* @media query*/
 /* need to add col classes and add querys for mobile */
 
