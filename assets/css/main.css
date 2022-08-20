@@ -42,7 +42,17 @@ body {
   font-size: 45px;
 }
 
+#s_zodiac {
+  font-size: x-large;
+}
+
+#horoscope_text {
+  font-size: larger;
+  font-weight: 500;
+}
+
 /* @media query*/
+/* need to add col classes and add querys for mobile */
 
 @media only screen and (max-width: 768px) {
   aside {

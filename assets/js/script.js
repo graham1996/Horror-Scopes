@@ -23,7 +23,7 @@ var geminiHoroscopes = [
 var taurusHoroscopes = [
    'You need to build an R&R-burrow to do some feelings, & because you draw comfort from tangible things, demand that the spirits of ether manifest. Let the archangels burn with splendor! Because for you, it isn’t real unless it’s right there blazing in your self-care bunker.',
    'After the full moon, your dreams will answer your most pressing questions about love, magic, & adequate hydration. Yes, even that dream about harmonizing with an all-spider a capella group. Especially that one. Keep a dream journal bound in fairy spittle.',
-   'Change is coming from within you in the form of an Athena-like lightning-burst out through your skull. Allow this new, sassy-smart electricity being to revamp everything from your wardrobe to your nervous system. Crackle onward!',
+   'Change is coming from within you in the form of an Athena-like lightning-burst out through your skull. Allow this new, sassy-smart electric being to revamp everything from your wardrobe to your nervous system. Crackle onward!',
 ];
 var cancerHoroscopes = [
    'As it happens, your myriad, shimmering, weird impulses are the guiding force to the world’s happiness. Unlock the tiny bird-sized door of your throat & let the bluebird of your happy weirdness voice its prophetic delights!',
@@ -56,7 +56,7 @@ var sagittariusHoroscopes = [
    'You have crushed every bad thing that happened to you through your powerful cocktail of battle strategy & black magic. Now that the past is literally dead to you, light an arrow on fire & shoot it into a forest. The tree it hits will tell your future',
 ];
 var capricornHoroscopes = [
-   'Create balance in your busy life by running around in circles flinging coffee everywhere & shouting about how busy you are. Then, take to the hills & gather your talking animals friends for a lovely yet comforting story hour, & sleep beneath the stars.',
+   'Create balance in your busy life by running around in circles flinging coffee everywhere & shouting about how busy you are. Then, take to the hills & gather your talking animal friends for a lovely yet comforting story hour, & sleep beneath the stars.',
    'Time to play! The stars suggest laser tag, or something in which you shoot light from your body, symbolizing how captivating & piercing you are, thereby triple-charging your powers. Perhaps try something with electric eels.',
    'When was the last time you rolled around on the floor for the sheer pleasure of it? Or made friends with the rats at the park or on the subway? Prioritize glee. Teach a religious leader how to hula-hoop. Quit the banal. Become the Emperor of Ice Cream.',
 ];
