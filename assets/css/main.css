@@ -39,8 +39,17 @@ body {
 }
 
 #menText {
+  display: flex;
+  justify-content: center;
   font-size: 45px;
   text-decoration: none;
+}
+
+#subtext {
+  display: flex;
+  justify-content: center;
+  font-size:x-large;
+  font-weight: 300;
 }
 
 #s_zodiac {
