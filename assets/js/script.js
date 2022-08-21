@@ -189,8 +189,6 @@ document.getElementById('test_z').onclick = function () {
    getHoroscope(zodiacSign);
 };
 
-//let horoscopeButtonEl = document.getElementById('s_zodiac');
-//horoscopeButtonEl.addEventListener('click', function () 
 function getHoroscope(zodiacSign){
     let horoscopeEl = document.getElementById('horoscope_text');
    if (zodiacSign === 'Capricorn') {
@@ -224,4 +222,33 @@ function getHoroscope(zodiacSign){
    }
 }
 
-console.log(document.getElementById('s_zodiac'));
+
+// const form = document.querySelector('form')
+// const ul = document.querySelector('ul')
+// const button = document.querySelector('savebutton')
+// const input = document.getElementById('item')
+// let itemsArray = localStorage.getItem('items')
+//   ? JSON.parse(localStorage.getItem('items'))
+//   : []
+
+// localStorage.setItem('items', JSON.stringify(itemsArray))
+// const data = JSON.parse(localStorage.getItem('items'))
+
+// const liMaker = (text) => {
+//   const li = document.createElement('li')
+//   li.textContent = text
+//   ul.appendChild(li)
+// }
+
+// button.addEventListener('submit', function (e) {
+//   e.preventDefault()
+
+//   itemsArray.push(input.value)
+//   localStorage.setItem('items', JSON.stringify(itemsArray))
+//   liMaker(input.value)
+//   input.value = ''
+// })
+
+// data.forEach((item) => {
+//   liMaker(item)
+// })

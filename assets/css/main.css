@@ -56,6 +56,10 @@ body {
   text-align: center;
 }
 
+#savebutton {
+  margin: 2%;
+}
+
 /* @media query*/
 /* need to add col classes and add querys for mobile */
 
