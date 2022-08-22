@@ -79,21 +79,30 @@ var ariesHoroscopes = [
 console.log(moonLon);
 console.log(moonLat);
 
-fetch('https://rws-cards-api.herokuapp.com/api/v1/cards/random?n=3').then(
-   function (response) {
-      return response.json().then(function (data) {
-         console.log(data);
-         if (!cardName1) {
-            localStorage.setItem('card-1-name', data.cards[0].name);
-            localStorage.setItem('card-1-meaning', data.cards[0].meaning_up);
-            localStorage.setItem('card-2-name', data.cards[1].name);
-            localStorage.setItem('card-2-meaning', data.cards[1].meaning_up);
-            localStorage.setItem('card-3-name', data.cards[2].name);
-            localStorage.setItem('card-3-meaning', data.cards[2].meaning_up);
-         }
-      });
-   }
-);
+var tarotFetch = function () {
+   fetch("https://rws-cards-api.herokuapp.com/api/v1/cards/random?n=3")
+       .then(function (response) {
+           return response.json()
+               .then(function (data) {
+                   console.log(data);
+                       localStorage.setItem("card-1-name", data.cards[0].name);
+                       localStorage.setItem('card-1-meaning', data.cards[0].meaning_up)
+                       localStorage.setItem("card-2-name", data.cards[1].name);
+                       localStorage.setItem('card-2-meaning', data.cards[1].meaning_up)
+                       localStorage.setItem("card-3-name", data.cards[2].name);
+                       localStorage.setItem('card-3-meaning', data.cards[2].meaning_up)
+               })
+       });
+}
+
+var tarotDisplay = function () {
+   document.getElementById('card-1-name').textContent = localStorage.getItem('card-1-name');
+   document.getElementById('card-2-name').textContent = localStorage.getItem('card-2-name');
+   document.getElementById('card-3-name').textContent = localStorage.getItem('card-3-name');
+   document.getElementById('card-1-meaning').textContent = localStorage.getItem('card-1-meaning');
+   document.getElementById('card-2-meaning').textContent = localStorage.getItem('card-2-meaning');
+   document.getElementById('card-3-meaning').textContent = localStorage.getItem('card-3-meaning');
+}
 
 fetch(nasaUrl + 'regulus', {}).then(function (response) {
    return response.json().then(function (data) {
@@ -120,6 +129,7 @@ var moonPhase = localStorage.getItem('moon_phase');
 console.log(moonPhase);
 
 window.onload = function () {
+   tarotFetch();
    setTime();
 
    moonEl = document.getElementById('moon');
@@ -187,6 +197,7 @@ document.getElementById('test_z').onclick = function () {
    );
    let zodiacSign = document.getElementById('s_zodiac').innerText;
    getHoroscope(zodiacSign);
+   tarotDisplay();
 };
 
 function getHoroscope(zodiacSign){
@@ -221,4 +232,6 @@ function getHoroscope(zodiacSign){
          sagittariusHoroscopes[Math.floor(Math.random() * 3)];
    }
 }
+
+
 
