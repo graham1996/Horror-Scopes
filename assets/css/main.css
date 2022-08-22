@@ -83,6 +83,11 @@ body {
   margin-top: 70px;
 }
 
+#title {
+  background-color: black;
+  opacity: 80%;
+}
+
 /* @media query*/
 /* need to add col classes and add querys for mobile */
 
