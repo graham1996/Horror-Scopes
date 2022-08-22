@@ -1,6 +1,6 @@
 # groupProject1
 
-## AS A USER I want a site to tell me my horoscope.
+### AS A USER I want a site to tell me my horoscope.
 
 ## WHEN I view the page I am met with a friendly user interface.
 
