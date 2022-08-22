@@ -1,7 +1,7 @@
 var formEl = $('.birth-form');
 var birthdayEl = $('input[name="birthday"]');
 var birthTimeEl = $('input[name="birth-time"]');
-//var nasaUrl = "https://api.nasa.gov/planetary/apod?api_key=";
+var nasaUrl = "https://api.nasa.gov/planetary/apod?api_key=";
 var nasaUrl = 'https://images-api.nasa.gov/search?q=';
 var nasaKey = 'Bb0VibPKgDQeWj6rnb7xN5ueIK4ykbqnkoSRzonS';
 var moonKey = 'a7ff106b7692ff39d83d685ee3bd714b';
@@ -11,7 +11,7 @@ var moonLon = localStorage.getItem('longitude');
 var moonEl = document.getElementById('moon');
 var cardName1 = localStorage.getItem('card-1-name');
 var cardName2 = localStorage.getItem('card-2-name');
-var cardName3 = localStorage.getItem('cart-3-name');
+var cardName3 = localStorage.getItem('card-3-name');
 var cardMeaning1 = localStorage.getItem('card-1-meaning');
 var cardMeaning2 = localStorage.getItem('card-2-meaning');
 var cardMeaning3 = localStorage.getItem('card-3-meaning');

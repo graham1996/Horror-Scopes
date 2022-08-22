@@ -12,6 +12,13 @@ body {
 
 }
 
+#containersaved {
+  background-color: #2F63BD;
+  opacity: 90%;
+  min-width: 550px;
+  min-height: 600px;
+}
+
 #menu {
   opacity: 90%;
 }
@@ -68,6 +75,12 @@ body {
 
 #savebutton {
   margin: 2%;
+}
+
+#jez {
+  max-width: 400px;
+  max-height: 350px;
+  margin-top: 70px;
 }
 
 /* @media query*/
