@@ -225,7 +225,7 @@ function getHoroscope(zodiacSign){
 
 // const form = document.querySelector('form')
 // const ul = document.querySelector('ul')
-// const button = document.querySelector('savebutton')
+// const button = document.querySelector('button')
 // const input = document.getElementById('item')
 // let itemsArray = localStorage.getItem('items')
 //   ? JSON.parse(localStorage.getItem('items'))
@@ -240,7 +240,7 @@ function getHoroscope(zodiacSign){
 //   ul.appendChild(li)
 // }
 
-// button.addEventListener('submit', function (e) {
+// form.addEventListener('submit', function (e) {
 //   e.preventDefault()
 
 //   itemsArray.push(input.value)
@@ -252,3 +252,8 @@ function getHoroscope(zodiacSign){
 // data.forEach((item) => {
 //   liMaker(item)
 // })
+
+function savePage() {
+   var savedHor = document.getElementById('horoscope_text').value
+   document.getElementById('here').innerHTML = savedHor;
+}
