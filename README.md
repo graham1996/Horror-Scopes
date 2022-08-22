@@ -1,4 +1,4 @@
-# groupProject1
+# Daily "Horror"scopes
 
 #### AS A USER I want a site to tell me my horoscope.
 
